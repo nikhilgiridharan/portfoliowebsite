@@ -36,16 +36,16 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 1rem;
-  animation: scroll-right 30s linear infinite;
+  animation: scroll-left 30s linear infinite;
   width: fit-content;
 }
 
-@keyframes scroll-right {
+@keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
