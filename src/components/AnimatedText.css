@@ -1,0 +1,56 @@
+.animated-text {
+  display: inline-block;
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.animated-text .char {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInChar 0.3s ease forwards;
+}
+
+.animated-text .char.space {
+  width: 0.3em;
+}
+
+.animated-text.complete .cursor {
+  display: none;
+}
+
+.animated-text .cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  color: var(--text-primary);
+}
+
+@keyframes fadeInChar {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+  }
+}
+

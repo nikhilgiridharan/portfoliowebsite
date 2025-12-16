@@ -1,0 +1,33 @@
+.about {
+  background-color: var(--bg-primary);
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: clamp(1.125rem, 2.25vw, 1.375rem);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-text strong {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+

@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#CC5500" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top cylinder -->
+    <ellipse cx="100" cy="55" rx="55" ry="18"/>
+    <line x1="45" y1="55" x2="45" y2="95"/>
+    <line x1="155" y1="55" x2="155" y2="95"/>
+    
+    <!-- Middle cylinder -->
+    <ellipse cx="100" cy="95" rx="55" ry="18"/>
+    <line x1="45" y1="95" x2="45" y2="135"/>
+    <line x1="155" y1="95" x2="155" y2="135"/>
+    
+    <!-- Bottom cylinder -->
+    <ellipse cx="100" cy="135" rx="55" ry="18"/>
+    <path d="M 45 135 Q 45 155 100 155 T 155 135" stroke="#CC5500" stroke-width="14" fill="none"/>
+  </g>
+</svg>
