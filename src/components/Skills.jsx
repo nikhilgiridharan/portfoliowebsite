@@ -12,25 +12,30 @@ const Skills = () => {
     { name: 'Power BI', logo: '/powerbi-logo.png' }
   ]
 
+  // Duplicate skills for seamless infinite loop
+  const duplicatedSkills = [...skills, ...skills]
+
   return (
     <section id="skills" className="skills">
       <div className="container">
         <h2 className="section-title">Skills</h2>
-        <div className="skills-list">
-          {skills.map((skill, index) => {
-            const isLargerLogo = ['SQL', 'Cassandra', 'Spark'].includes(skill.name)
-            const isDatabricks = skill.name === 'Databricks'
-            return (
-              <span key={index} className="skill-tag">
-                <img 
-                  src={skill.logo} 
-                  alt={skill.name} 
-                  className={`skill-logo ${isLargerLogo ? 'skill-logo-large' : ''} ${isDatabricks ? 'skill-logo-databricks' : ''}`} 
-                />
-                {skill.name}
-              </span>
-            )
-          })}
+        <div className="skills-carousel-wrapper">
+          <div className="skills-list">
+            {duplicatedSkills.map((skill, index) => {
+              const isLargerLogo = ['SQL', 'Cassandra', 'Spark'].includes(skill.name)
+              const isDatabricks = skill.name === 'Databricks'
+              return (
+                <span key={index} className="skill-tag">
+                  <img 
+                    src={skill.logo} 
+                    alt={skill.name} 
+                    className={`skill-logo ${isLargerLogo ? 'skill-logo-large' : ''} ${isDatabricks ? 'skill-logo-databricks' : ''}`} 
+                  />
+                  {skill.name}
+                </span>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>
