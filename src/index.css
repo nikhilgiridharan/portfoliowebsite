@@ -32,7 +32,7 @@ body {
   background: #2d3748;
   background-attachment: fixed;
   color: var(--text-primary);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
@@ -69,7 +69,7 @@ section {
 }
 
 .section-title {
-  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-size: clamp(1.875rem, 4vw, 3rem);
   font-weight: 300;
   margin-bottom: 4rem;
   color: var(--text-primary);

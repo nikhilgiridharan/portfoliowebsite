@@ -27,7 +27,7 @@
 }
 
 .hero-name {
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
   font-weight: 300;
   color: var(--text-primary);
   letter-spacing: -0.03em;
@@ -36,7 +36,7 @@
 }
 
 .hero-role {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.125rem, 2.25vw, 1.5rem);
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.02em;
@@ -83,7 +83,7 @@
 
 .cta-button {
   padding: 1rem 2rem;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   text-decoration: none;
   border-radius: 6px;

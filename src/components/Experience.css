@@ -32,7 +32,7 @@
 }
 
 .experience-company {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   font-weight: 300;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
@@ -72,7 +72,7 @@
 }
 
 .experience-role {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: var(--text-secondary);
   font-weight: 300;
 }
@@ -84,7 +84,7 @@
 .experience-location {
   color: var(--text-secondary);
   margin-bottom: 0.25rem;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -93,7 +93,7 @@
 .experience-period {
   color: var(--text-secondary);
   font-weight: 300;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -110,7 +110,7 @@
   padding-left: 1.5rem;
   position: relative;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .experience-achievements li::before {
